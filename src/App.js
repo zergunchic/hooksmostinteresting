@@ -1,10 +1,12 @@
-import './App.css';
+import ShoppingList from "./components/ShoppingList";
+import ShoppingListContextProvider from "./components/ShoppingListContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
+    <div className="App segment very padding">
+      <ShoppingListContextProvider>
+          <ShoppingList></ShoppingList>
+        </ShoppingListContextProvider>
     </div>
   );
 }
