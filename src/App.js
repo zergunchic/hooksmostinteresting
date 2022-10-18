@@ -3,7 +3,7 @@ import ShoppingListContextProvider from "./components/ShoppingListContext";
 
 function App() {
   return (
-    <div className="App segment very padding">
+    <div className="App">
       <ShoppingListContextProvider>
           <ShoppingList></ShoppingList>
         </ShoppingListContextProvider>

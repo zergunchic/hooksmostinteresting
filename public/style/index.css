@@ -16,5 +16,9 @@ code {
   display: flex;
   justify-content: center;
   justify-items: center;
-  width: 60%;
+  margin-top:2rem;
+}
+
+#submit{
+  margin:1.4rem 0;
 }

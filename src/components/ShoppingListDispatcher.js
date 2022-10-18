@@ -1,12 +1,12 @@
 
 const ShoppingListDispatcher = (state, action)=>{
+    const product = action.newProduct;
     switch(action.type){
         case 'ADD_TO_LIST':
-            return [...state, {id:action.id,name:action.name,desc:action.desc, price:action.price}]
+            return [...state, {id:product.id,name:product.name,desc:product.desc, price:product.price}]
         case 'REMOVE_FROM_LIST':
-            state.filter((product)=>{
-                return product.id !== action.id
-            })
+            return state.filter((actualProduct)=>
+                actualProduct.id !== action.id)
         default:
             return state;
     }
